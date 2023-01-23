@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <nav>
+      <img src="image/logo.png" width="50">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="login.html"  class="active">LOGIN</a></li>
+        <li><a href="member.html">MEMBER</a>
+          <ul>
+            <li><a href="#" style="color: black;">Executive</a></li>
+            <li><a href="#" style="color: black;">General</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul> 
+    </nav>
+   
+    <div align="right"> 
+      <form action = "login.php" method = "post" class="log">
+        <table>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="email"></td>
+            <td>  </td><td>  </td>
+                <td> Password</td>
+                <td>:</td>
+                <td><input type="password" name="password"></td>
+            <td> </td><td> </td>
+            <td>
+                    <input type="submit" name="Login" value="Login">
+              </td>
+            </tr>
+        </table>
+      </form>
+    </div>
+
+  <div align="center"> 
+            <table>
+              <tr>
+                
+        <td align="center">  
+        <form class="sig" >
+          <br><b style="color: yellow">Don't have accont?<br> Sign Up!</b><br><br><br>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td><input type="text" name="name"></td>
+            </tr> 
+            
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+          <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td>
+                  <SELECT>
+                    <OPTION Value="male">Male</OPTION>
+                    <OPTION Value="female">Female</OPTION>
+                    <OPTION Value="others">Others</OPTION>
+                  </SELECT>
+                </td>
+            </tr>
+            <tr>
+                <td>Birth</td>
+                <td>:</td>
+                <td><input type="date" name="date_of_birth"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td align="right">+880</td>
+                <td>-</td>
+                <td><input type="phone" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+        </table>
+        <table>
+          <tr>
+                <td><input type="checkbox" id="male" name="gender" value="male"> <label for="male">Agree to the Club all Terms.</label> </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="2"  align="middle">
+                    <input type="submit" name="submit" value="Submit"><a href="member.html"></a>
+                </td>
+            </tr>
+            </tr>
+            <tr><td></td></tr><tr><td></td></tr>
+            <tr><td align="center" style="color: yellow">OR,</td></tr>
+            <tr><td></td></tr><tr><td></td></tr>
+              <tr>
+                <td align="middle">
+                  <input type="submit" name="Connect" value="Connect with Gmail">
+                </td>
+            </tr>
+            </table>
+        </form>        
+        </td>
+        <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+        <td>
+                <h3 align="left" style="color: yellow">E-Business & Entrepreneurship Club, Jahangirnagar University</h3>
+                <p align="left" style="color: white">Challenges and barriers will rise but with our efficient members and their utter dedication <br>we aim to pave the ways to building one of the most efficient <br>and unique clubs of the country.</p>
+                <img src="image/login.jpg" width="700" align="left">  
+
+            </td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; Claims <script>document.write(new Date().getFullYear())</script> by <b>Soliman Hossain</b><br>
+      Contact : <a href="solimanhossain@proton.me" style="color:darkgrey">solimanhossain@proton.me</a></p>
+    </footer>
+  </body>
+</html>

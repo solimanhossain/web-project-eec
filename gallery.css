@@ -1,0 +1,68 @@
+div.gallery {
+  align-items: center;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 175px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+ 
+
+#container {
+    width: 800px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.thumbnails {
+  text-align:center;
+}
+
+.thumbnails > li {
+  display: inline-block;
+  *display:inline; /* ie7 fix */
+  float: none; 
+}
+
+
+.slide,
+.slide li,
+.slide img {
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+
+@-webkit-keyframes slide {
+    0% {left: -1000px;}
+    100% {left: 0;}
+}
+
+.slide li:target {
+    z-index: 100;
+    -webkit-animation: slider 1s 1;
+}
+
+@-webkit-keyframes noTarget {
+    0% {z-index: 75;}
+    100% {z-index: 75;}
+}
+
+.slide li:not(:target) {
+    -webkit-animation: noTarget 1s 1;
+}
